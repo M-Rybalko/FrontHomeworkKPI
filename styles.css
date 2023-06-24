@@ -1,0 +1,684 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Founders Grotesk";
+    src: local("Founders Grotesk"),
+    url("./fonts/FoundersGrotesk-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Founders Light";
+    src: local("Founders Light"),
+    url("./fonts/FoundersGrotesk-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Tiempos Headline";
+    src: local("Tiempos Headline"),
+    url("./fonts/TiemposHeadline-Light.otf") format("opentype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: "Founders Light";
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+div {
+    display: block;
+}
+
+.redAnnouncementBanner {
+    background-color: #da2924;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    align-items: center;
+}
+
+.nowAvailable {
+    color: #fff;
+    width: max-content;
+    margin-left: 620px;
+    margin-right: auto;
+    margin-top: 4px;
+    text-decoration: none;
+    font-weight: light;
+    font-size: 15px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    line-height: 0.8;
+    font-family: "Founders Grotesk";
+    position: absolute;
+}
+
+.closeButton {
+    background-color: transparent;
+    display: block;
+    padding: 0;
+    width: max-content;
+    border: none;
+    color: #fff;
+    margin-right: 15px;
+    margin-left: auto;
+    text-align: center;
+    float: right;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: lighter;
+}
+
+.bgpic {
+    background-image: url(https://cdn.shopify.com/s/files/1/0263/4688/1082/files/Oishii-Koyo-Berry-Hero-Mobile_640x.png?v=1677609630);
+    height: 535px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #ababab;
+    opacity: 100%;
+}
+
+.pinnedNavBar {
+    display: flex;
+    border-bottom: 1px solid #fff;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.pinnedNavBar ul {
+    color: #fff;
+    padding-left: 50px;
+    margin-top: 5px;
+}
+
+.pinnedNavBar li {
+    float: left;
+    display: flex;
+    margin-right: 30px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.mainLogo {
+    width: max-content;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.mainLogo img {
+    width: 100px;
+    margin: auto;
+    height: 30px;
+}
+
+.pinnedNavBar button {
+    background-color: transparent;
+    display: block;
+    padding: 0;
+    width: 165px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.introText {
+    width: 375px;
+    height: 200px;
+    margin-top: 60px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+.introText h2 {
+    font-weight: lighter;
+    font-family: "Tiempos Headline";
+    font-size: 38px;
+}
+
+.introText p {
+    font-weight: 550;
+    font-family: "Founders Grotesk";
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.introText a {
+    color: #fff;
+    display: block;
+    width: max-content;
+    text-decoration: none;
+    padding-bottom: 4px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #fff;
+    font-family: "Founders Grotesk";
+}
+
+.newspapers {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 180px;
+    margin-right: 70px;
+    height: 150px;
+}
+
+.newspapers li {
+    float: left;
+    display: flex;
+    margin-right: 80px;
+    text-decoration: none;
+    width: max-content;
+    text-align: center;
+}
+
+.newspapers img {
+    height: 26px;
+}
+
+.berries {
+    display: flex;
+}
+
+.koyoBerry {
+    background-image: url(https://cdn.shopify.com/s/files/1/0263/4688/1082/files/2023.02_JFONG_Oishii_Koyo_Berry_004_16x9_a762e9b6-6c17-4af3-aa8c-274a74886820_2160x.jpg?v=1676917069);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #ababab;
+    opacity: 100%;
+    height: 800px;
+    width: 709px;
+    margin-left: 50px;
+    color: #fff;
+    display: inline-block;
+}
+
+.omakaseBerry {
+    background-image: url(https://cdn.shopify.com/s/files/1/0263/4688/1082/files/Image_2_1_2160x.jpg?v=1655850396);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #ababab;
+    opacity: 100%;
+    height: 800px;
+    width: 709px;
+    margin-right: 50px;
+    color: #fff;
+    display: inline-block;
+}
+
+.BerryText {
+    padding-top: 60px;
+    text-align: center;
+    width: 360px;
+    height: 740px;
+    margin: auto;
+}
+
+.BerryText h3 {
+    font-weight: lighter;
+    font-family: "Tiempos Headline";
+    font-size: 32px;
+}
+
+.BerryText p {
+    font-weight: 550;
+    font-family: "Founders Grotesk";
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.BerryText a {
+    display: block;
+    margin: auto;
+    color: #fff;
+    width: max-content;
+    text-decoration: none;
+    padding-bottom: 4px;
+    font-weight: 100;
+    line-height: 1;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #fff;
+    font-family: "Founders Light";
+    margin-top: 575px;
+}
+
+.berriesAdj {
+    margin: 60px 50px;
+    display: flex;
+    align-items: center;
+}
+
+.adjectivesImage {
+    display: block;
+    height: 900px;
+    width: 680px;
+    margin-left: auto;
+}
+
+.adjectives {
+    padding-left: 50px;
+}
+
+.adjectives h4 {
+    font-weight: 100;
+    font-family: "Tiempos Headline";
+    font-size: 34px;
+}
+
+.adjectives li {
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 100;
+    font-family: "Tiempos Headline";
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.adjectives a {
+    width: max-content;
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 4px;
+    font-weight: 100;
+    line-height: 1;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #da2924;
+    font-family: "Founders Light";
+}
+
+.wholeFoods {
+    background-image: url(https://cdn.shopify.com/s/files/1/0263/4688/1082/files/210920-OISHI-9614_3_3_640x.jpg?v=1655850320);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 50px;
+    color: #fff;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.partnerLogos {
+    text-align: center;
+    width: 480px;
+    padding-right: 200px;
+    padding-left: 180px;
+}
+
+.partnerLogos img {
+    width: 100px;
+}
+
+.partnershipPic {
+    width: 460px;
+    height: 700px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.partnershipText {
+    color: #fff;
+    width: 480px;
+    text-align: center;
+    padding-left: 110px;
+    padding-right: 80px;
+}
+
+.partnershipText h4 {
+    width: 290px; 
+    font-weight: 100;
+    font-family: "Tiempos Headline";
+    font-size: 32px;
+}
+
+.partnershipText p {
+    margin-left: 12px;
+    width: 260px;
+    font-weight: 550;
+    font-family: "Founders Light";
+    font-size: 15px;
+}
+
+.partnershipText a {
+    color: #fff;
+    display: block;
+    width: max-content;
+    text-decoration: none;
+    padding-bottom: 4px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #fff;
+    font-family: "Founders Light";
+    margin: auto;
+}
+
+.rootedInInnovation {
+    background-image: url(https://cdn.shopify.com/s/files/1/0263/4688/1082/files/Image_with_Text_Module_w__Background_60d55432-916a-4fd8-8c86-a9d8cd583fd6_640x.jpg?v=1655850424);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #ababab;
+    opacity: 100%;
+    text-align: center;
+    display: block;
+    height: 800px;
+    margin: 60px 50px;
+    color: #fff;
+}
+
+.rootedHeader {
+    width: 380px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.rootedHeader h4 {
+    width: 150px;
+    font-weight: 100;
+    font-family: "Tiempos Headline";
+    font-size: 32px;
+    display: inline-block;
+    margin: auto;
+}
+
+.rootedHeader img {
+    width: 40px;
+    display: inline-block;
+}
+
+.rootedInInnovation a {
+    color: #fff;
+    display: block;
+    width: max-content;
+    text-decoration: none;
+    padding-bottom: 4px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #fff;
+    font-family: "Founders Light";
+    margin: auto;
+}
+
+.jimmyKimmel {
+    background-color: #d5e1d6;
+    padding: 50px;
+    display: flex;
+}
+
+.jimmyKimmelText h4 {
+    font-weight: 100;
+    font-family: "Tiempos Headline";
+    font-size: 38px;
+}
+
+.jimmyKimmelText {
+    display: block;
+    width: 650px;
+    font-weight: 100;
+}
+
+.jimmyKimmelVid {
+    display: block;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: auto;
+    width: max-content;
+}
+
+.jimmyKimmelVid video {
+    height: 650px;
+    width: 440px;
+}
+
+.notInYourArea {
+    height: 405px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.leftHand {
+    background-color: transparent;
+    margin-left: -130px;
+    margin-top: -30px;
+}
+
+.rightHand {
+    background-color: transparent;
+    float: right;
+    margin-right: -120px;
+    margin-top: -110px;
+}
+
+.leftHand img {
+    width: 400px;
+}
+
+.rightHand img {
+    width: 400px;
+}
+
+.text {
+    display: flex;
+    text-align: center;
+    background-color: #F3F0E7;
+    width: 1420px;
+    height: 305px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.logo {
+    height: 55px;
+    display: block;
+    margin: auto;
+}
+
+.announcement {
+    width: max-content;
+    display: block;
+    margin: auto;
+}
+
+.announcement h4 {
+    font-weight: 100;
+    font-family: "Tiempos Headline";
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.announcement button {
+    background-color: transparent;
+    width: max-content;
+    border: none;
+    border-bottom: 1px solid #da2924;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: lighter;
+    padding-bottom: 4px;
+}
+
+.instagram {
+    margin-bottom: 0;
+    height: 255px;
+    display: block;
+
+}
+
+.instagram li {
+    width: 16.666%;
+    height: 100%;
+    float: left;
+    display: block;
+}
+
+.post {
+    width: 253px;
+    height: 255px;
+}
+
+.footerbg {
+    background-color: #da2924;
+}
+
+.footer {
+    background-color: #da2924;
+    color: #fff;
+    padding: 60px 50px;
+    margin: 0;
+    height: max-content;
+    display: flex;
+    align-items: start;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 60px;
+}
+
+.footer img {
+    height: 200px;
+    width: auto;
+    display: inline-block;
+}
+
+.company {
+    line-height: 2;
+    font-family: "Founders Light";
+    font-weight: 100;
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 200px;
+}
+
+.footer h5 {
+    font-size: 20px;
+    font-family: "Founders Light";
+    font-weight: 600;
+}
+
+.footerbg a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Founders Light";
+}
+
+.support {
+    line-height: 2;
+    font-family: "Founders Light";
+    font-weight: 100;
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.form {
+    display: inline-block;
+    width: 600px;
+    margin-left: 80px;
+    margin-top: 8px;
+}
+
+.longText {
+    font-size: 12px;
+    font-family: "Founders Light";
+    font-weight: 100;
+}
+
+.longText a {
+    text-decoration: underline;
+}
+
+.submit {
+    color: #fff;
+    background-color: transparent;
+    width: max-content;
+    border: none;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: lighter;
+    padding-bottom: 4px;
+    margin: 0;
+}
+
+.input {
+    background-color: transparent;
+    color: #fff;
+    width: 240px;
+    margin-right: 10px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+
+.linksFooter {
+    padding: 30px 50px;
+    height: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.linksFooter ul {
+    display: block;
+}
+
+.linksFooter li {
+    float: left;
+    display: flex;
+    list-style-type: none;
+    margin-right: 30px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.privacy {
+    display: block;
+    width: max-content;
+    margin: auto;
+}
+
+.linksFooter p {
+    display: block;
+    float: right;
+}

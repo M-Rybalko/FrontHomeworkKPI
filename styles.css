@@ -440,6 +440,8 @@ div {
     background-color: #d5e1d6;
     padding: 50px;
     display: flex;
+    position: relative;
+    z-index: 1000;
 }
 
 .jimmyKimmelText h4 {
@@ -483,8 +485,8 @@ div {
 .rightHand {
     background-color: transparent;
     float: right;
-    margin-right: -120px;
-    margin-top: -110px;
+    margin-right: -50px;
+    margin-top: -105px;
 }
 
 .leftHand img {

@@ -89,25 +89,72 @@ div {
 .pinnedNavBar {
     display: flex;
     border-bottom: 1px solid #fff;
+    width: 100%;
     height: 80px;
     margin: 0;
     padding: 0;
     align-items: center;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    z-index: 100;
 }
 
 .pinnedNavBar ul {
     color: #fff;
     padding-left: 50px;
     margin-top: 5px;
+    height: 100%;
 }
 
-.pinnedNavBar li {
+.dropdown {
+    color: #fff;
     float: left;
     display: flex;
     margin-right: 30px;
+    height: 100%;
+}
+
+.dropdown a {
+    color: #fff;
     letter-spacing: 1px;
     text-decoration: none;
     font-size: 14px;
+}
+
+.dropdownContent {
+    width: 160px;
+    position: absolute;
+    display: none;
+    background-color: white;
+    font-size: 18px;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.dropdown:hover + .dropdownContent {
+    display: block;
+}
+
+.dropdownContent:hover {
+    display: block;
+}
+
+.dropdownContent a {
+    color: #000;
+    text-decoration: none;
+}
+
+.dropdownContent li {
+    margin-top: 15px;
+    text-align: left;
+    align-items: center;
+}
+
+.dropdownContent ul {
+    list-style-type: none;
+    justify-content: left;
+    padding-left: 30px;
 }
 
 .mainLogo {
@@ -139,10 +186,15 @@ div {
     font-weight: lighter;
 }
 
+.introduction {
+    margin: 0;
+    padding: 0;
+}
+
 .introText {
     width: 375px;
     height: 200px;
-    margin-top: 60px;
+    padding-top: 100px;
     margin-left: 50px;
     color: #fff;
 }
@@ -441,7 +493,7 @@ div {
     padding: 50px;
     display: flex;
     position: relative;
-    z-index: 1000;
+    z-index: 50;
 }
 
 .jimmyKimmelText h4 {
@@ -553,8 +605,9 @@ div {
 }
 
 .post {
-    width: 253px;
+    width: 100%;
     height: 255px;
+    object-fit: cover;
 }
 
 .footerbg {

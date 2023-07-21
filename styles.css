@@ -34,49 +34,8 @@ div {
     display: block;
 }
 
-.redAnnouncementBanner {
-    background-color: #da2924;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    height: 40px;
-    align-items: center;
-}
-
-.nowAvailable {
-    color: #fff;
-    width: max-content;
-    margin-left: 620px;
-    margin-right: auto;
-    margin-top: 4px;
-    text-decoration: none;
-    font-weight: light;
-    font-size: 15px;
-    text-align: center;
-    border-bottom: 1px solid #fff;
-    line-height: 0.8;
-    font-family: "Founders Grotesk";
-    position: absolute;
-}
-
-.closeButton {
-    background-color: transparent;
-    display: block;
-    padding: 0;
-    width: max-content;
-    border: none;
-    color: #fff;
-    margin-right: 15px;
-    margin-left: auto;
-    text-align: center;
-    float: right;
-    text-decoration: none;
-    font-size: 26px;
-    font-weight: lighter;
-}
-
 .bgpic {
-    background-image: url(https://cdn.shopify.com/s/files/1/0263/4688/1082/files/Oishii-Koyo-Berry-Hero-Mobile_640x.png?v=1677609630);
+    background-image: url(https://oishii.com/cdn/shop/files/2023.02_JFONG_Oishii_Koyo_Berry_High_Res_002_2160x.jpg?v=1677255226);
     height: 535px;
     background-position: center;
     background-repeat: no-repeat;
@@ -91,20 +50,18 @@ div {
     border-bottom: 1px solid #fff;
     width: 100%;
     height: 80px;
-    margin: 0;
-    padding: 0;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 40px;
+    top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 2;
 }
 
-.pinnedNavBar ul {
+.navLists {
     color: #fff;
     padding-left: 50px;
     margin-top: 5px;
-    height: 100%;
 }
 
 .dropdown {
@@ -123,16 +80,18 @@ div {
 }
 
 .dropdownContent {
-    width: 160px;
+    width: 100px;
     position: absolute;
     display: none;
     background-color: white;
-    font-size: 18px;
     margin-top: 25px;
     align-items: center;
+    list-style-type: none;
+    justify-content: left;
+    padding: 0 30px 15px 30px;
 }
 
-.dropdown:hover + .dropdownContent {
+.dropdown:hover .dropdownContent {
     display: block;
 }
 
@@ -143,19 +102,12 @@ div {
 .dropdownContent a {
     color: #000;
     text-decoration: none;
+    font-size: 16px;
 }
 
 .dropdownContent li {
     margin-top: 15px;
-    text-align: left;
-    align-items: center;
-}
-
-.dropdownContent ul {
-    list-style-type: none;
-    justify-content: left;
-    padding-left: 30px;
-}
+ }
 
 .mainLogo {
     width: max-content;
@@ -169,7 +121,7 @@ div {
     height: 30px;
 }
 
-.pinnedNavBar button {
+.navBarButton {
     background-color: transparent;
     display: block;
     padding: 0;
@@ -184,6 +136,13 @@ div {
     text-decoration: none;
     font-size: 13px;
     font-weight: lighter;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navBarButton:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 .introduction {
@@ -228,11 +187,10 @@ div {
 }
 
 .newspapers {
+    width: 100%;
     display: flex;
     align-items: center;
-    text-align: center;
-    margin-left: 180px;
-    margin-right: 70px;
+    justify-content: center;
     height: 150px;
 }
 
@@ -251,6 +209,7 @@ div {
 
 .berries {
     display: flex;
+    justify-content: center;
 }
 
 .koyoBerry {
@@ -262,7 +221,7 @@ div {
     background-color: #ababab;
     opacity: 100%;
     height: 800px;
-    width: 709px;
+    width: 50%;
     margin-left: 50px;
     color: #fff;
     display: inline-block;
@@ -277,7 +236,7 @@ div {
     background-color: #ababab;
     opacity: 100%;
     height: 800px;
-    width: 709px;
+    width: 50%;
     margin-right: 50px;
     color: #fff;
     display: inline-block;
@@ -327,10 +286,11 @@ div {
 }
 
 .adjectivesImage {
-    display: block;
+    display: flex;
     height: 900px;
-    width: 680px;
+    width: 50%;
     margin-left: auto;
+    object-fit: cover;
 }
 
 .adjectives {
@@ -375,13 +335,13 @@ div {
     margin-left: 50px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .partnerLogos {
+    align-items: center;
     text-align: center;
-    width: 480px;
-    padding-right: 200px;
-    padding-left: 180px;
+    width: 33%;
 }
 
 .partnerLogos img {
@@ -389,30 +349,30 @@ div {
 }
 
 .partnershipPic {
-    width: 460px;
     height: 700px;
     margin-top: 50px;
     margin-bottom: 60px;
 }
 
 .partnershipText {
+    width: 33%;
     color: #fff;
-    width: 480px;
     text-align: center;
-    padding-left: 110px;
-    padding-right: 80px;
 }
 
 .partnershipText h4 {
-    width: 290px; 
+    margin: auto;
+    display: flex;
+    width: 60%;
     font-weight: 100;
     font-family: "Tiempos Headline";
     font-size: 32px;
 }
 
 .partnershipText p {
-    margin-left: 12px;
-    width: 260px;
+    margin: auto auto 20px;
+    display: flex;
+    width: 60%;
     font-weight: 550;
     font-family: "Founders Light";
     font-size: 15px;
@@ -420,7 +380,7 @@ div {
 
 .partnershipText a {
     color: #fff;
-    display: block;
+    display: flex;
     width: max-content;
     text-decoration: none;
     padding-bottom: 4px;
@@ -454,7 +414,7 @@ div {
     height: 100px;
     display: flex;
     align-items: center;
-    margin: auto;
+    margin: auto auto 20px;
     padding-top: 40px;
 }
 
@@ -493,13 +453,14 @@ div {
     padding: 50px;
     display: flex;
     position: relative;
-    z-index: 50;
+    z-index: 1;
 }
 
 .jimmyKimmelText h4 {
     font-weight: 100;
     font-family: "Tiempos Headline";
     font-size: 38px;
+    margin-bottom: 20px;
 }
 
 .jimmyKimmelText {
@@ -524,45 +485,39 @@ div {
 .notInYourArea {
     height: 405px;
     display: flex;
-    align-items: center;
-    text-align: center;
+    position: relative;
 }
 
 .leftHand {
-    background-color: transparent;
-    margin-left: -130px;
-    margin-top: -30px;
+    display: flex;
+    position: absolute;
+    left: 0;
 }
 
 .rightHand {
-    background-color: transparent;
-    float: right;
-    margin-right: -50px;
-    margin-top: -105px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
-.leftHand img {
-    width: 400px;
+.hand {
+    width: 350px;
 }
 
-.rightHand img {
-    width: 400px;
-}
-
-.text {
+.signUpContent {
+    background-color: #F3F0E7;
+    margin: 50px;
     display: flex;
     text-align: center;
-    background-color: #F3F0E7;
-    width: 1420px;
     height: 305px;
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 100%;
 }
 
 .logo {
     height: 55px;
     display: block;
-    margin: auto;
+    margin: auto auto 20px;
 }
 
 .announcement {
@@ -578,26 +533,30 @@ div {
     line-height: 1.6;
 }
 
-.announcement button {
-    background-color: transparent;
+.announcement p {
+    margin-bottom: 20px;
+}
+
+.signUp {
     width: max-content;
-    border: none;
-    border-bottom: 1px solid #da2924;
-    text-align: center;
+    color: #000;
     text-decoration: none;
-    font-size: 13px;
-    font-weight: lighter;
     padding-bottom: 4px;
+    font-weight: 100;
+    line-height: 1;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #da2924;
+    font-family: "Founders Light";
 }
 
 .instagram {
     margin-bottom: 0;
     height: 255px;
     display: block;
-
 }
 
-.instagram li {
+.instagramPicture {
     width: 16.666%;
     height: 100%;
     float: left;
@@ -608,6 +567,11 @@ div {
     width: 100%;
     height: 255px;
     object-fit: cover;
+    transition: brightness 0.3s ease;
+}
+
+.post:hover {
+    filter: brightness(0.7);
 }
 
 .footerbg {
@@ -622,6 +586,7 @@ div {
     height: max-content;
     display: flex;
     align-items: start;
+    justify-content: center;
     border-bottom: 1px solid #fff;
     padding-bottom: 60px;
 }
@@ -707,14 +672,12 @@ div {
 }
 
 .linksFooter {
+    display: flex;
     padding: 30px 50px;
     height: 15px;
     color: #fff;
+    justify-content: space-between;
     text-align: center;
-}
-
-.linksFooter ul {
-    display: block;
 }
 
 .linksFooter li {
@@ -725,15 +688,4 @@ div {
     letter-spacing: 1px;
     text-decoration: none;
     font-size: 14px;
-}
-
-.privacy {
-    display: block;
-    width: max-content;
-    margin: auto;
-}
-
-.linksFooter p {
-    display: block;
-    float: right;
 }
